@@ -1,0 +1,100 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+          $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+              $('nav').addClass('black');
+            }
+            else {
+              $('nav').removeClass('black');
+            }
+          })
+        </script>
+        <title>WEBPAGE</title>
+    </head>
+    <body>
+      <div class="wrapper">
+          <nav>
+          <div class="logo">KHYATI GAURANA</div>
+           <ul>
+             <li><a href="#home" class="hom">Home</a></li>
+             <li><a class="hob" href="#hobbies">My Hobbies</a></li>
+             <li><a href="#skills" class="ski">Skills</a></li>
+           </ul>
+          </nav>
+          <section class="sec1" id="home">
+            <img src="picture.jpg" alt="Avatar" div class="picture">
+            <div class="about">
+            <p><span class="font1">Hi! My name is</span><br>
+               <span class="font2">Khyati Gaurana</span><br>
+               <span class="font3">I'm a first year CSE student at Netaji Subhash University of Technology.</span>
+            </p>
+            <button><a href="#hobbies">Hobbies</a></button>
+            <button><a href="#skills">Skills</a></button>
+          </div>
+  
+          </div>
+          </section>
+          <section class="hobbies" id="hobbies">MY HOBBIES
+            <div class="row">
+              <div class="column">
+                <div class="container">
+                  <img src="art.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">PAINTING</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="container">
+                 <img src="reading.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">READING</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="container">
+                 <img src="crochet.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">CROCHETING</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="container">
+                 <img src="tvv.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">WATCHING TV</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="skills" id="skills">Skills
+            <div class="progress">
+              <div class="skill html">HTML</div>
+            </div>
+            <div class="progress">
+              <div class="skill css">CSS</div>
+            </div>
+            <div class="progress">
+              <div class="skill javascript">JAVASCRIPT</div>
+            </div>
+            <div class="progress">
+              <div class="skill python">PYTHON</div>
+            </div>
+            <div class="progress">
+              <div class="skill c">C</div>
+            </div>
+         </section>
+      </div>
+    </body>
+</html>
