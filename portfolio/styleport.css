@@ -1,0 +1,454 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 125rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.hue-shift{
+    animation: hue-shift 5s infinite alternate;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav{
+    height: 8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.logo-box{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #bdc2d4;
+}
+.logo-box:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-item{
+    margin-right: 5rem;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.nav-link{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+    color: #bdc2d4;
+}
+.nav-link:hover{
+    opacity: 0.6;
+}
+
+
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #2e2d4e, #182031);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.landing-page::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100vh;
+    background-image: url("./images/bg-pat.png");
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.content{
+    margin-top: 10rem;
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.content-details{
+    padding:12% 10%;
+    /* height: 50vh; */
+    max-width: 80%;
+    float: left;
+    font-size: 35px;
+    transition: .3s;
+    color: #bdc2d4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  
+  .font1{
+    color: #bdc2d4;
+    font-size: 2rem;
+}
+.font2{
+    color: #bdc2d4;
+   font-size: 5rem;
+   font-weight: 700;
+}
+.font3{
+    color: #bdc2d4;
+   font-size: 1.5rem;
+}
+.img-grp{
+    /* margin-top: 10rem; */
+    text-align: center;
+    position: relative;
+}
+.blob-large{
+    animation: move-up 2s infinite alternate;
+    z-index: 8;
+}
+.blob-bean{
+    position: absolute;
+    top: 2.5rem;
+    left: -1rem;
+    z-index: 10;
+    animation: move-down 2s infinite alternate;
+}
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+.blob1{
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blob3{
+    top: 15rem;
+    left: -17rem;
+}
+.blob2{
+    right: 5rem;
+    bottom: -24rem;
+}
+.blob4{
+    left: -21rem;
+    bottom: -17rem;
+}
+section.hobbies{
+    z-index: -2;
+    background-image: linear-gradient(to bottom left, #182031, #2e2d4e);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color:#bdc2d4;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+.column {
+    float: left;
+    width: 25%;
+  }
+
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+.image{  
+    width:20rem;
+    height:20rem;
+    object-fit: cover;
+    object-position: center;
+    border:none;
+    border-radius:50%;
+    display: block;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.label{
+    position:relative;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+section.skills{
+    z-index: -2;
+    background-image: linear-gradient(to top left, #182031, #2e2d4e);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color:#bdc2d4;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.progress {
+  background-color: #bdc2d4;
+  width: 80%;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.skill {
+  background-color: #1bbdc9;
+  color: #2e2d4e;
+  padding: 1rem;
+  text-align: right;
+  font-size: 15px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.html {
+  width: 70%;
+}
+.css {
+  width: 60%;
+}
+.javascript{
+  width:30%;
+}
+.cpp{
+  width:85%;
+}
+.c{
+  width:60%;
+}
+.python{
+    width: 40%;
+}
+/* animations */
+@keyframes move-up {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(2rem);
+    }
+}
+
+@keyframes move-down {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-2rem);
+    }
+}
+
+@keyframes hue-shift{
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 1133px){
+    
+    section.hobbies{
+        z-index: -2;
+        background-image: linear-gradient(to bottom left, #182031, #2e2d4e);
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        color:#bdc2d4;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    
+    }
+    .column {
+        float: left;
+        width: 50%;
+      }
+    
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+    .image{  
+        width:30rem;
+        height:30rem;
+        object-fit: cover;
+        object-position: center;
+        border:none;
+        border-radius:50%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    
+    .label{
+        position:relative;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav{
+        align-items: center;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    }
+    .content-details{
+        order:1;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo-box{
+        font-size: 80%;
+    }
+    .font1{
+        font-size: 2rem;
+        margin-right: 1rem;
+
+    }
+    .font2{
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    .font3{
+        font-size: 2rem;
+    }
+    /* .img-grp{
+        margin-top: 10rem;
+    } */
+    .blob-large{
+        width: 70%;
+    }
+    .blob-bean{
+        width: 30%;
+        top: -1rem;
+        left: 5rem;
+    }
+    .blob1{
+        display: none;
+    }
+    .blob4{
+        left: 2rem;
+        /* bottom: 2rem; */
+        width: 25%;
+    }
+    .blob2{
+        bottom: -26rem;
+        right: -3rem;
+        width: 60%;
+    }
+    .blob3{
+        left: 10rem;
+        bottom: -4rem;
+        top: revert;
+        width: 30%;
+    }
+    section.hobbies{
+        z-index: -2;
+        background-image: linear-gradient(to bottom left, #182031, #2e2d4e);
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        color:#bdc2d4;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    
+    }
+    .column {
+        float: left;
+        width: 50%;
+      }
+    
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+    .image{  
+        width:10rem;
+        height:10rem;
+        object-fit: cover;
+        object-position: center;
+        border:none;
+        border-radius:50%;
+        display: block;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    
+    .label{
+        position:relative;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+}
+
